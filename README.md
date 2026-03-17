@@ -11,11 +11,9 @@ We are the **award-winning team** of the **NTIRE 2026 Cross-Domain Few-Shot Obje
 
 ![CD-FSOD Task](https://upload-images.jianshu.io/upload_images/9933353-3d7be0d924bd4270.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-hhhhhhh
-
 ---
 
-## 🧠 Overview
+## 🧠 Overview hhhhhhh
 
 This repository contains our solution for the `open-source track` of the NTIRE 2026 CD-FSOD Challenge.  
 We propose a **Pseudo-Label Driven Vision-Language Grounding framework** for CD-FSOD, which combines large-scale vision-language foundation models with an iterative pseudo-labeling strategy.
