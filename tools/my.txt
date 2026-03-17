@@ -1,0 +1,13 @@
+CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 --master_port=65520 tools/finetune.py \
+    --config-file /home/jyw/2026NTIRE/GLIP/configs/pretrain/glip_Swin_L.yaml \
+    --ft-tasks /home/jyw/2026NTIRE/GLIP/configs/cdfsod/Competition/d2.yaml \
+    --custom_shot_and_epoch_and_general_copy "0_200_2" \
+    --evaluate_only_best_on_test --push_both_val_and_test \
+    --num_experiments 1 \
+    --output_txt_name B0 \
+    --output_json_save_path /home/jyw/2026NTIRE/GLIP/configs/test \
+    MODEL.WEIGHT /home/jyw/CDFSOD/GLIP/weights/glip_large_model.pth \
+    SOLVER.USE_AMP False TEST.DURING_TRAINING True TEST.IMS_PER_BATCH 8 SOLVER.IMS_PER_BATCH 2 SOLVER.WEIGHT_DECAY 0.05 TEST.EVAL_TASK detection DATASETS.TRAIN_DATASETNAME_SUFFIX _grounding MODEL.BACKBONE.FREEZE_CONV_BODY_AT 2 MODEL.DYHEAD.USE_CHECKPOINT True SOLVER.FIND_UNUSED_PARAMETERS False SOLVER.TEST_WITH_INFERENCE True SOLVER.USE_AUTOSTEP True DATASETS.USE_OVERRIDE_CATEGORY True SOLVER.SEED 10 DATASETS.SHUFFLE_SEED 3 DATASETS.USE_CAPTION_PROMPT True DATASETS.DISABLE_SHUFFLE True \
+    SOLVER.STEP_PATIENCE 3 SOLVER.CHECKPOINT_PER_EPOCH 1.0 SOLVER.AUTO_TERMINATE_PATIENCE 6 SOLVER.MODEL_EMA 0.0 SOLVER.TUNING_HIGHLEVEL_OVERRIDE full \
+    SOLVER.BASE_LR 5e-5 \
+    SOLVER.TUNING_HIGHLEVEL_OVERRIDE train_rpn

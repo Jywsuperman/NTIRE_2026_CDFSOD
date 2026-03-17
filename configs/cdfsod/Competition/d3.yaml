@@ -1,0 +1,69 @@
+DATALOADER:
+  ASPECT_RATIO_GROUPING: false
+  SIZE_DIVISIBILITY: 32
+DATASETS:
+  GENERAL_COPY: 16
+  OVERRIDE_CATEGORY: '[
+        {
+            "id": 1,
+            "name": "dent"
+        },
+        {
+            "id": 2,
+            "name": "scratch"
+        },
+        {
+            "id": 3,
+            "name": "crack"
+        },
+        {
+            "id": 4,
+            "name": "glass shatter"
+        },
+        {
+            "id": 5,
+            "name": "lamp broken"
+        },
+        {
+            "id": 6,
+            "name": "tire flat"
+        }
+    ]'
+  REGISTER:
+    test:
+      ann_file: /home/data/CDFSOD_datas/Challenge/dataset3/annotations/test.json
+      img_dir: /home/data/CDFSOD_datas/Challenge/dataset3/test
+    train:
+      ann_file: /home/data/CDFSOD_datas/Challenge/dataset3/annotations/train.json
+      img_dir: /home/data/CDFSOD_datas/Challenge/dataset3/train
+    train_1_3:
+      ann_file: /home/data/CDFSOD_datas/Challenge/dataset3/annotations/1_shot.json
+      img_dir: /home/data/CDFSOD_datas/Challenge/dataset3/train
+    train_5_3:
+      ann_file: /home/data/CDFSOD_datas/Challenge/dataset3/annotations/5_shot.json
+      img_dir: /home/data/CDFSOD_datas/Challenge/dataset3/train
+    train_10_3:
+      ann_file: /home/data/CDFSOD_datas/Challenge/dataset3/annotations/10_shot.json
+      img_dir: /home/data/CDFSOD_datas/Challenge/dataset3/train
+  TEST: ("test",)
+  TRAIN: ("train_10_3",)
+INPUT:
+  MAX_SIZE_TEST: 1333
+  MAX_SIZE_TRAIN: 1333
+  MIN_SIZE_TEST: 800
+  MIN_SIZE_TRAIN: 800
+MODEL:
+  ATSS:
+    NUM_CLASSES: 7
+  DYHEAD:
+    NUM_CLASSES: 7
+  FCOS:
+    NUM_CLASSES: 7
+  ROI_BOX_HEAD:
+    NUM_CLASSES: 7
+SOLVER:
+  CHECKPOINT_PERIOD: 100
+  MAX_EPOCH: 12
+  WARMUP_ITERS: 0
+TEST:
+  IMS_PER_BATCH: 8
