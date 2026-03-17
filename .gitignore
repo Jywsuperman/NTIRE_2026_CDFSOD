@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pth
+*.pt
+*.ckpt
+*.tar
+*.zip
+*.npy
+*.npz
+logs/
+output/
+outputs/
+work_dirs/
+wandb/
