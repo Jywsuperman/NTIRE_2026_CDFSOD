@@ -3,7 +3,7 @@
 We are the **award-winning team** of the **NTIRE 2026 Cross-Domain Few-Shot Object Detection (CD-FSOD) Challenge** at the **CVPR Workshop**.
 
 - 🏆 **Track**: `open-source track`
-- 🎖️ **Award**: **1st Place**
+- 🎖️ **Award**: **2nd Place**
 
 🔗 [NTIRE 2026 Official Website](https://cvlai.net/ntire/2026/)  
 🔗 [NTIRE 2026 Challenge Website](https://www.codabench.org/competitions/12873/)  
@@ -13,7 +13,7 @@ We are the **award-winning team** of the **NTIRE 2026 Cross-Domain Few-Shot Obje
 
 ---
 
-## 🧠 Overview hhhhhhh
+## 🧠 Overview
 
 This repository contains our solution for the `open-source track` of the NTIRE 2026 CD-FSOD Challenge.  
 We propose a **Pseudo-Label Driven Vision-Language Grounding framework** for CD-FSOD, which combines large-scale vision-language foundation models with an iterative pseudo-labeling strategy.
@@ -57,7 +57,7 @@ At present, we release the best checkpoints for **Dataset 2** under the **1-shot
 
 The GroundingDINO-based results for **Dataset 1** and **Dataset 3** are available in the following repository:
 
-[GroundingDINO Results Repository](xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx)
+[GroundingDINO Results Repository](github.com/z-yaz/CDiscover)
 
 ## 🔍 Inference & Evaluation
 
