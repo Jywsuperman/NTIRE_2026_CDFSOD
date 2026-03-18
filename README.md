@@ -41,7 +41,7 @@ python setup.py build develop --user
 
 
 ## 📂 Dataset Preparation
-Please follow the instructions in the [official CD-FSOD repo](https://github.com/lovelyqian/NTIRE2025_CDFSOD) to download and prepare the dataset.
+Please follow the instructions in the [official CD-FSOD repo](https://github.com/ohMargin/NTIRE2026_CDFSOD) to download and prepare the dataset.
 
 ## Model Zoo
 
