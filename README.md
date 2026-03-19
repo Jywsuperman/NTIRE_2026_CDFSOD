@@ -57,7 +57,7 @@ At present, we release the best checkpoints for **Dataset 2** under the **1-shot
 
 The GroundingDINO-based results for **Dataset 1** and **Dataset 3** are available in the following repository:
 
-[GroundingDINO Results Repository](github.com/z-yaz/CDiscover)
+[GroundingDINO Results Repository](https://github.com/z-yaz/CDiscover)
 
 ## 🔍 Inference & Evaluation
 
